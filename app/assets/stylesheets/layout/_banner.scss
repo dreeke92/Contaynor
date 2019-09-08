@@ -11,7 +11,12 @@
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'center');
 		@include vendor('justify-content', 'center');
-		background-image: image-url('banner.jpg');
+		background-image: image-url('background2.jpg');
+
+    background-image:
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)),
+      // linear-gradient(to bottom, rgba(56, 163, 355, 0.5), rgba(255, 255, 255, 0.25)),
+      url('background9.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center;
@@ -27,7 +32,7 @@
 				'transform 0.5s ease-in-out',
 				'opacity 0.5s ease-in-out'
 			));
-			padding: 2.75rem;
+			padding: 1rem;
 			width: 100%;
 			text-align: center;
 			position: relative;
@@ -154,3 +159,7 @@
 			}
 		}
 	}
+
+  .banner-image {
+    height: 100px;
+  }
