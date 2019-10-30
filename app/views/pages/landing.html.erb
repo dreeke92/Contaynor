@@ -2,44 +2,31 @@
 <!-- Banner -->
 <section id="banner">
   <div class="content">
-    <%= image_tag('logo-with-slogan2', :class => "banner-image") %>
+    <%= image_tag('logo3', :class => "banner-image") %>
   </div>
   <a href="#first" class="more scrolly">Learn More</a>
 </section>
-<%= render 'shared/construction' %>
 <!-- Section -->
 <section class="main alt" id="first">
   <header>
-    <h3>Green transportation is here</h3>
-    <p>Our mission at Contaynor is loud and clear. Contaynor is committed to offer the most flexible and innovative road transportation solutions, in the most sustainable way for our planet and direct environment. Besides planting a tree for every transportation assignment, Contaynor's own Benelux fleet consists of only electric and hybrid vehicles.</p>
+    <h3>Zero-Emission Transport is here</h3>
+    <p>Contaynor is committed to offer the most flexible and innovative last mile transportation services, in the most sustainable way for our planet and direct environment. Besides planting a tree for every transportation assignment, Contaynor's own fleet consists of only electric vehicles.</p>
   </header>
   <div class="inner">
-    <article class="post style2">
-      <div class="content">
-        <header>
-          <span class="category">Parcel transportation</span>
-          <h3>Airport transportation</h3>
-        </header>
-        <p>Transportation to and from the airport needs to be timely and flexible for your business. With our own fleet of E-vehicles we can guarantee your parcel transportation from A to B in the most efficient way.</p>
-        <ul class="actions">
-          <li><a href="#footer" class="button next">Contact us</a></li>
-        </ul>
-      </div>
-      <div class="image" data-position="center"><%= image_tag("airport.jpg") %></div>
-    </article>
-    <article class="post style2 alt">
-      <div class="content">
-        <header>
-          <span class="category">Parcel transportation</span>
-          <h3>Dedicated transportation</h3>
-        </header>
-        <p>Business is unpredictable, while your clients are time sensitive. Contaynor addresses your needs by providing flexible dedicated parcel transportation in a sustainable manner.</p>
-        <ul class="actions">
-          <li><a href="#footer" class="button next">Contact us</a></li>
-        </ul>
-      </div>
-      <div class="image" data-position="center"><%= image_tag("road.jpg") %></div>
-    </article>
+    <%= render 'components/service_card',
+      small_title: "Parcel transportation",
+      large_title: "Airport transportation",
+      text: "Transportation to and from the airport needs to be timely and flexible for your business. With our own fleet of E-vehicles we can guarantee your parcel transportation from A to B in the most efficient way.",
+      picture: "airport.jpg",
+      style: ""
+    %>
+    <%= render 'components/service_card',
+      small_title: "Parcel transportation",
+      large_title: "Dedicated transportation",
+      text: "Business is unpredictable, while your clients are time sensitive. Contaynor addresses your needs by providing flexible dedicated parcel transportation in a sustainable manner.",
+      picture: "road.jpg",
+      style: "alt"
+    %>
   </div>
 </section>
 <%= render 'shared/footer' %>
