@@ -81,16 +81,19 @@
 		input[type="button"],
 		button,
 		.button {
-			background-color: _palette($highlight, bg);
+			// background-color: _palette($highlight, bg);
+      background: linear-gradient(90deg, rgba(49,133,108,1) 0%, rgba(69,189,153,1) 100%);
 			color: _palette($highlight, fg-bold) !important;
 
 			&:hover {
-				background-color: lighten(_palette($highlight, bg), 5);
+				// background-color: lighten(_palette($highlight, bg), 5);
+        background: linear-gradient(90deg, rgba(69,189,153,1) 0%, rgba(69,189,153,1) 100%);
 				color: _palette($highlight, fg-bold) !important;
 			}
 
 			&:active {
-				background-color: darken(_palette($highlight, bg), 5);
+				// background-color: darken(_palette($highlight, bg), 5);
+        background: linear-gradient(90deg, rgba(69,189,153,1) 0%, rgba(69,189,153,1) 100%);
 			}
 
 			&.alt {

@@ -28,6 +28,7 @@
 
 		> .content {
 			@include color-typography(accent1);
+      background: linear-gradient(90deg, rgba(39,105,85,1) 0%, rgba(69,189,153,1) 60%, rgba(87,230,187,1) 100%);
 			@include vendor('transition', (
 				'transform 0.5s ease-in-out',
 				'opacity 0.5s ease-in-out'
@@ -162,4 +163,16 @@
 
   .banner-image {
     height: 100px;
+    @include breakpoint('<=large') {
+      height: 90px;
+    }
+    @include breakpoint('<=medium') {
+      height: 80px;
+    }
+    @include breakpoint('<=small') {
+      height: 70px;
+    }
+    @include breakpoint('<=xsmall') {
+      height: 60px;
+    }
   }

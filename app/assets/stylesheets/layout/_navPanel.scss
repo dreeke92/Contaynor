@@ -118,5 +118,17 @@
 	}
 
 .navbar-image {
-  height: 50px;
+  height: 45px;
+  @include breakpoint('<=large') {
+    height: 45px;
+  }
+  @include breakpoint('<=medium') {
+    height: 40px;
+  }
+  @include breakpoint('<=small') {
+    height: 35px;
+  }
+  @include breakpoint('<=xsmall') {
+    height: 30px;
+  }
 }
