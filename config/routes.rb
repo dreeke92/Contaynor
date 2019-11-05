@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'generic', to: "pages#generic"
   get 'elements', to: "pages#elements"
   get 'home', to: "pages#home"
+  get 'values', to: "pages#values"
 end
