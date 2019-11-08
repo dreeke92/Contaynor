@@ -1,16 +1,27 @@
 <!-- Header -->
-<header id="header">
+<header id="header" class="<%= type %>">
   <!-- Logo -->
   <div class="logo">
-    <%= image_tag('logo-black', :class => "navbar-image") %>
+    <%= image_tag('logo-nav', :class => "navbar-image") %>
   </div>
   <!-- Nav -->
     <nav id="nav">
       <ul>
-        <li><a href="">Home</a></li>
-        <li class="current"><a href="">Values</a></li>
-        <li><a href="">Responsibility</a></li>
-        <li><a href="">Contact</a></li>
+        <li>
+          <%= link_to root_path do %>
+            Home
+          <% end %>
+        </li>
+        <li>
+          <%= link_to values_path do %>
+            Values
+          <% end %>
+        </li>
+        <li>
+          <%= link_to contact_path do %>
+            Contact
+          <% end %>
+        </li>
       </ul>
     </nav>
 </header>
