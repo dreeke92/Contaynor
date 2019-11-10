@@ -1,0 +1,17 @@
+/* Icons */
+
+  ul.icons-contaynor {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+  }
+
+    ul.icons-contaynor li {
+      display: inline-block;
+      padding: 0 0.75rem 0 0;
+      margin: 0.2rem 1rem 0.2rem 0.2rem;
+    }
+
+      ul.icons-contaynor li:last-child {
+        padding-right: 0;
+      }

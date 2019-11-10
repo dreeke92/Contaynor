@@ -153,7 +153,7 @@
 
 		@include breakpoint('<=xsmall') {
 			padding: 12rem 0;
-			min-height: 0;
+			min-height: 100vh;
 
 			> .more {
 				display: none;

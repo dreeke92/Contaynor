@@ -185,28 +185,29 @@
           }
 			}
 
-			> nav {
-				top: 1rem;
-				right: 1rem;
+			// > nav {
+			// 	top: 1rem;
+			// 	right: 1rem;
 
-				> ul {
-					padding: 0 0.5rem 0 0;
+			// 	> ul {
+			// 		padding: 0 0.5rem 0 0;
 
-					> li {
-						margin: 0 1.25rem;
+			// 		> li {
+			// 			margin: 0 1.25rem;
 
-						&.current {
-							&:after {
-								bottom: 0.25rem;
-							}
-						}
-					}
-				}
-			}
+			// 			&.current {
+			// 				&:after {
+			// 					bottom: 0.25rem;
+			// 				}
+			// 			}
+			// 		}
+			// 	}
+			// }
 
 			> .navPanelToggle {
 				top: 1rem;
 				right: 1rem;
+        color: _palette(bg);
 			}
 		}
 
@@ -272,3 +273,7 @@
 			}
 		}
 	}
+
+.navPanelToggle {
+  color: _palette(fg);
+}

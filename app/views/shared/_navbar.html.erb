@@ -5,23 +5,24 @@
     <%= image_tag('logo-nav', :class => "navbar-image") %>
   </div>
   <!-- Nav -->
-    <nav id="nav">
-      <ul>
-        <li>
-          <%= link_to root_path do %>
-            Home
-          <% end %>
-        </li>
-        <li>
-          <%= link_to values_path do %>
-            Values
-          <% end %>
-        </li>
-        <li>
-          <%= link_to contact_path do %>
-            Contact
-          <% end %>
-        </li>
-      </ul>
-    </nav>
+  <nav id="nav">
+    <ul id="nav-menu">
+      <li class="nav-item">
+        <%= link_to root_path do %>
+          Home
+        <% end %>
+      </li>
+      <li class="nav-item">
+        <%= link_to values_path do %>
+          Values
+        <% end %>
+      </li>
+      <li class="nav-item">
+        <%= link_to contact_path do %>
+          Contact
+        <% end %>
+      </li>
+    </ul>
+  </nav>
 </header>
+

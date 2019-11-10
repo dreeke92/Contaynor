@@ -1,5 +1,7 @@
 import "bootstrap";
 
+import "../components/tabs";
+
 import '../template/jquery';
 import '../template/dropotron';
 import '../template/scrollex';
