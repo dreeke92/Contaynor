@@ -6,7 +6,9 @@
     </header>
     <p><%= text %></p>
     <ul class="actions">
-      <li><a href="#footer" class="button next">Contact us</a></li>
+      <li>
+        <%= link_to "Contact us", contact_path, class: "button next" %>
+      </li>
     </ul>
   </div>
   <div class="image" data-position="center"><%= image_tag(picture) %></div>
