@@ -10,23 +10,46 @@
 <section class="main alt" id="first">
   <header>
     <h3>Zero-Emission Transport is here</h3>
-    <p>Contaynor is committed to offer the most flexible transportation services for city distribution and last mile delivery, in the most sustainable way for our planet and direct environment. To live up to our Zero-Emission objective, Contaynor operates a fleet of only electric vehicles and plants a tree per transportation assignment.</p>
+    <p>Contaynor is committed to offer city distribution and last mile delivery in the most sustainable way for our planet and direct environment. To live up to our Zero-Emission objective, Contaynor operates a fleet of only electric vehicles and plants a tree per transportation assignment.</p>
   </header>
   <div class="inner">
-    <%= render 'components/service_card',
-      small_title: "City distribution",
-      large_title: "Parcel delivery",
-      text: "Rather than logistics hubs, cities are more importantly our living environments. Contaynor offers emission-free city distribution. With our own fleet of E-vehicles we can guarantee parcel delivery right to your doorstep.",
-      picture: "city2.jpg",
-      style: ""
-    %>
-    <%= render 'components/service_card',
-      small_title: "Last mile delivery",
-      large_title: "Dedicated transportation",
-      text: "Business is unpredictable, while your clients are time sensitive, especially in the moving business. Our fleet of large electric vans can deliver your customized and precious goods door-to-door in the most sustainable and caring manner.",
-      picture: "crossroad.jpg",
-      style: "alt"
-    %>
+    <article class="post style2">
+      <div class="content">
+        <header>
+          <span class="category">
+           City distribution
+          </span>
+          <h3>Beverage Delivery</h3>
+        </header>
+        <p>
+          We all know that pain of going to the shop and having to carry those heavy bottles, right? At Contaynor beverages, we gladly provide that service for you. Just place your order, and we'll delivery it right to your doorstep with our electric fleet.
+        </p>
+        <ul class="actions">
+          <li>
+            <%= link_to "Shop now", "http://www.contaynor.store", class: "button next", target: :_blank %>
+          </li>
+        </ul>
+      </div>
+      <div class="image" data-position="center"><%= image_tag("bottles2.jpg") %></div>
+    </article>
+    <article class="post style2 alt">
+      <div class="content">
+        <header>
+          <span class="category">
+           City distribution
+          </span>
+          <h3>Home delivery</h3>
+        </header>
+        <p>
+          Does your business provide customized home delivery? Contaynor can deliver any type of goods to your end-customer, be it refrigerated or not. Just let us know what your specific needs are. Our fleet of large electric vans can deliver your customized and precious goods door-to-door in the most sustainable and caring manner.</p>
+        <ul class="actions">
+          <li>
+            <%= link_to "Get in touch", contact_path, class: "button next", target: :_blank %>
+          </li>
+        </ul>
+      </div>
+      <div class="image" data-position="center"><%= image_tag("city2.jpg") %></div>
+    </article>
   </div>
 </section>
 <%= render 'shared/footer' %>
